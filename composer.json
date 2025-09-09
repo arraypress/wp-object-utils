@@ -1,0 +1,45 @@
+{
+  "name": "arraypress/wp-object-utils",
+  "version": "1.0.0",
+  "description": "Minimal, memorable object manipulation utilities for WordPress and PHP projects.",
+  "type": "library",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/arraypress/wp-object-utils",
+  "authors": [
+    {
+      "name": "David Sherlock",
+      "homepage": "https://arraypress.com/"
+    }
+  ],
+  "require": {
+    "php": ">=7.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "ArrayPress\\ObjectUtils\\": "src/"
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "support": {
+    "issues": "https://github.com/arraypress/wp-object-utils/issues",
+    "source": "https://github.com/arraypress/wp-object-utils"
+  },
+  "keywords": [
+    "wordpress",
+    "wp",
+    "object",
+    "utilities",
+    "manipulation",
+    "changes",
+    "dot-notation",
+    "pick",
+    "minimal",
+    "arraypress"
+  ]
+}
