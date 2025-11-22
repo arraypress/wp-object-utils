@@ -46,15 +46,10 @@ class Obj {
 	 * // Returns: ['email' => 'new@example.com']
 	 */
 	public static function changes( object $object, array $data ): array {
-		$changes = [];
 
-		foreach ( $data as $key => $value ) {
-			if ( property_exists( $object, $key ) && $object->$key !== $value ) {
-				$changes[ $key ] = $value;
-			}
-		}
-
-		return $changes;
+		return array_filter( $data, function ( $value, $key ) use ( $object ) {
+			return property_exists( $object, $key ) && $object->$key !== $value;
+		}, ARRAY_FILTER_USE_BOTH );
 	}
 
 	/**
